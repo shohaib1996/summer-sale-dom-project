@@ -5,15 +5,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Summer Sale</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'bg-color': '#F9F6E2',
+                        'btn-color': '#E527B2',
+
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        * {
+            font-family: 'Work Sans', sans-serif;
+        }
+    </style>
 
 </head>
 
 <body>
-    <header>
-        <h1>hello Summer Sale</h1>
+    <header class="bg-bg-color mb-24">
+        <div class="flex gap-5 flex-col lg:flex-row justify-center items-center max-w-screen-lg mx-auto">
+            <div class="flex-1 text-center">
+                <p class="text-xl lg:text-3xl font-medium mb-5 lg:mb-11 p-5 lg:p-5">---SALE FEVER---</p>
+                <h1 class="text-2xl lg:text-4xl font-bold  mb-10 lg:mb-20">Purchase TK 200 or <br>above & get <span
+                        class="text-btn-color">20% off</span></h1>
+                <span class="font-medium text-sm">Use Promo Code</span>
+                <button class="bg-btn-color text-white px-6 py-4 rounded-lg ml-4">SELL200</button>
+            </div>
+            <div class="flex-1">
+                <img class="lg:max-w-[550px] lg:max-h-[550px]" src="./images/Summer 1.png" alt="">
+            </div>
+        </div>
     </header>
+    <main class="max-w-screen-xl mx-auto flex gap-4 flex-col lg:flex-row items-center">
+        <div class="grid gap-4 grid-cols-1 lg:grid-cols-3 w-3/4">
+            <div>
+                <h2 class="font-semibold text-4xl mb-6">Kitchenware</h2>
+                <div class="card shadow-xl p-5 rounded-sm">
+                    <figure class="bg-slate-300 py-6"><img src="./images/prod1.png" alt="Shoes" /></figure>
+                    <div class="card-body flex justify-center items-center flex-col">
+                        <div class="rating">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-amber-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-amber-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-amber-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-amber-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-amber-400" />
+                        </div>
+                        <p class="font-bold">K. Accessories</p>
+                        <p>39.00 TK</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card shadow-xl p-5 rounded-sm mt-16">
+                    <figure class="bg-slate-300 py-6"><img src="./images/prod1.png" alt="Shoes" /></figure>
+                    <div class="card-body flex justify-center items-center flex-col">
+                        <div class="rating">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-amber-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-amber-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-amber-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-amber-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-amber-400" />
+                        </div>
+                        <p class="font-bold">K. Accessories</p>
+                        <p>39.00 TK</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card shadow-xl p-5 rounded-sm mt-16">
+                    <figure class="bg-slate-300 py-6"><img src="./images/prod1.png" alt="Shoes" /></figure>
+                    <div class="card-body flex justify-center items-center flex-col">
+                        <div class="rating">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-amber-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-amber-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-amber-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-amber-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-amber-400" />
+                        </div>
+                        <p class="font-bold">K. Accessories</p>
+                        <p>39.00 TK</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                
+            </div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="text-center flex-1 mt-16">
+            <h3>Have coupon?</h3>
+
+        </div>
+
+    </main>
 
     <script src="./js/script.js"></script>
 </body>
