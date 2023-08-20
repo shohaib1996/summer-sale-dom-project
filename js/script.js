@@ -18,6 +18,7 @@ function addToCart(target) {
         couponBtn.removeAttribute('disabled');
     }
     document.getElementById('total').innerText = total;
+    document.getElementById('grand-total').innerText = total;
 }
 
 document.getElementById('coupon-btn').addEventListener('click', function () {
